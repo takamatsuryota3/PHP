@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*カレンダーのスタイル*/
+table.calendar{
+    color: black;               /*文字色*/
+    border-collapse: collapse;  /*セルのボーダーの表示は、隣接するセルのボーダーと重ねて表示*/
+    border: 1px solid black;    /*外枠は黒色の細線*/
+}
+
+/*カレンダーのヘッダー部分のスタイル*/
+table.calendar th{
+    background-color: lightblue;        /*背景色*/
+    text-align: left;                   /*左寄せ*/
+    border-bottom: 2px solid black;     /*下線は黒色の太線*/
+    height: 30px;                       /*ヘッダーの高さ*/
+    font-size: 5px;                     /*フォントサイズ*/
+}
+
+/*カレンダーの日付のスタイル*/
+table.calendar td{
+    padding: 8px;                       /*余白*/
+    background-color: white;            /*背景色*/
+    text-align: left;                   /*左寄せ*/
+    border-bottom: 2px solid black;     /*下線は黒色の太線*/
+}
+
+/*日曜日列の文字色*/
+table.calendar th:first-of-type, table.calendar td:first-of-type{
+    color: red;     /*日曜日は赤色*/
+}
+
+/*土曜日列の文字色*/
+table.calendar th:last-of-type, table.calendar td:last-of-type{
+    color: blue;    /*土曜日は青色*/
+}
+
+/*前月・次月の配置*/
+
+
+/*指定日または現在日付の背景色*/
+table.calendar td.selectday{
+    background: yellow;
+}
