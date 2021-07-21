@@ -1,0 +1,8 @@
+# Docker Comppse Version
+version: "3"
+
+services:
+    app:
+        build : ./php
+        volumes:
+            - ./backend:/work
